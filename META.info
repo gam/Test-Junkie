@@ -1,0 +1,7 @@
+{
+    "name"        : "Test::Junkie",
+    "version"     : "*",
+    "description" : "A continuous test runner",
+    "depends"     : [ ],
+    "source-url"  : "git://github.com/gam/test-junkie.git"
+}
