@@ -7,10 +7,6 @@ class Tracker {
     multi method new()              { self.bless(*, directories => <lib t>) }
     multi method new(*@directories) { self.bless(*, :@directories) }
 
-    submethod BUILD(:@directories) {
-        @!directories = @directories;
-    }
-    
     method files() {
         gather find_files @.directories;
     }
