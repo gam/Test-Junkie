@@ -3,5 +3,5 @@
     "version"     : "*",
     "description" : "A continuous test runner for Perl 6",
     "depends"     : [ ],
-    "source-url"  : "git://github.com/gam/test-junkie.git"
+    "source-url"  : "git://github.com/gam/Test-Junkie.git"
 }
