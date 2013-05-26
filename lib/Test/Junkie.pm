@@ -35,7 +35,7 @@ class Tracker {
     sub find_files(*@dirs) {
         for @dirs -> $directory {
             for dir($directory) -> $file {
-                given "$directory/$file".IO { 
+                given $file.IO { 
                     when .f { take $_ }
                     when .d { find_files .path }
                 }
